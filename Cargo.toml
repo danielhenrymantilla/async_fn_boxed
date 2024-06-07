@@ -1,0 +1,19 @@
+[lib]
+proc-macro = true
+
+[package]
+name = "async_fn_boxed"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+proc-macro2.version = "1.0"
+quote.version = "1.0"
+syn.features = [
+    "full",
+    "visit-mut",
+]
+syn.version = "2.0"
+
+[dev-dependencies]
+trybuild = "1.0.96"
