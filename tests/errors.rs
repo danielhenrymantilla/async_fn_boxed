@@ -7,7 +7,7 @@ fn errors() {
 fn generate_snippets() -> Result<(), Box<dyn ::std::error::Error>> {
     use ::std::{fs, io::Write as _};
 
-    fs::remove_dir_all("tests/errors")?;
+    _ = fs::remove_dir_all("tests/errors");
     fs::create_dir_all("tests/errors")?;
 
     let file = fs::read_to_string("examples/errors.md")?;
