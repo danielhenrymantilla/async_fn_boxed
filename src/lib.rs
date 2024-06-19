@@ -1,4 +1,3 @@
-#![feature(proc_macro_def_site)]
 #![allow(nonstandard_style, unused_imports, unused_braces)]
 
 use ::core::mem;
