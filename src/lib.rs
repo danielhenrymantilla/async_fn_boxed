@@ -119,7 +119,7 @@ fn async_fn_boxed_inner(args: TokenStream2, input: TokenStream2) -> Result<Token
 ///     // …            // 👈
 /// {
 ///     async move {
-///         let _captured = (&each_arg, /* … */);
+///         let _captured = (&each_arg, /* … */); // <- Only needed for 100% correctness; skipped for now.
 ///         // …
 ///         Ret
 ///     }
